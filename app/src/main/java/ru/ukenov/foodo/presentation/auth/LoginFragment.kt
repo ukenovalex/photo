@@ -1,24 +1,22 @@
-package ru.ukenov.foodo.presentation.main
+package ru.ukenov.foodo.presentation.auth
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import ru.ukenov.foodo.R
-import ru.ukenov.foodo.databinding.FragmentRegisterBinding
+import ru.ukenov.foodo.databinding.FragmentLoginBinding
 
 
-class RegisterFragment : Fragment() {
-    private lateinit var binding: FragmentRegisterBinding
+class LoginFragment : Fragment() {
+    private lateinit var binding: FragmentLoginBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentRegisterBinding.inflate(layoutInflater, container, false)
+        binding = FragmentLoginBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
-
 }

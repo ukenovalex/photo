@@ -1,4 +1,4 @@
-package ru.ukenov.foodo.presentation.main
+package ru.ukenov.foodo.presentation.auth
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

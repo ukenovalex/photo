@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/firstPageFragment"
-        android:name="ru.ukenov.foodo.presentation.main.FirstPageFragment"
+        android:name="ru.ukenov.foodo.presentation.auth.FirstPageFragment"
         android:label="FirstPageFragment" >
         <action
             android:id="@+id/action_firstPageFragment_to_registerFragment"
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="ru.ukenov.foodo.presentation.main.LoginFragment"
+        android:name="ru.ukenov.foodo.presentation.auth.LoginFragment"
         android:label="LoginFragment">
         <argument
             android:name="ShowAppBar"
@@ -26,7 +26,7 @@
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
-        android:name="ru.ukenov.foodo.presentation.main.RegisterFragment"
+        android:name="ru.ukenov.foodo.presentation.auth.RegisterFragment"
         android:label="RegisterFragment" >
         <argument
             android:name="ShowAppBar"

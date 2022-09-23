@@ -4,7 +4,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".presentation.main.FirstPageFragment"
+        tools:context=".presentation.auth.FirstPageFragment"
         android:background="@drawable/main_bg">
         <ImageView
             android:id="@+id/logo"

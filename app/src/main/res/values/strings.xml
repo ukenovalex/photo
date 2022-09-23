@@ -6,4 +6,9 @@
     <string name="register_btn">Register</string>
     <string name="main_logo_description">Main Logo</string>
     <string name="back_button_description">Back Button</string>
+    <string name="log_in_title">Log in</string>
+    <string name="next_btn">Next</string>
+    <string name="auth_example_email">jane@example.com</string>
+    <string name="auth_example_password">••••••••••••</string>
+    <string name="register_auth_title">Register</string>
 </resources>

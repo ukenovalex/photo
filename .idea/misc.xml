@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/app_cursor.xml" value="0.185" />
+        <entry key="app/src/main/res/drawable/app_input.xml" value="0.185" />
         <entry key="app/src/main/res/drawable/bg_button_transparent.xml" value="0.185" />
         <entry key="app/src/main/res/drawable/button.xml" value="0.185" />
         <entry key="app/src/main/res/drawable/button_disabled.xml" value="0.185" />
@@ -15,7 +17,7 @@
         <entry key="app/src/main/res/font/roboto_black.xml" value="0.225" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.23083403538331929" />
         <entry key="app/src/main/res/layout/fragment_first_page.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.37604166666666666" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_register.xml" value="0.37604166666666666" />
       </map>
     </option>

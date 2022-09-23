@@ -1,16 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".presentation.main.LoginFragment">
-
-        <!-- TODO: Update blank fragment layout -->
+        android:layout_marginHorizontal="16dp"
+        android:orientation="vertical"
+        tools:context=".presentation.auth.LoginFragment">
         <TextView
+            style="@style/auth_title"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/log_in_title" />
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/app_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:inputType="textEmailAddress"
+            android:hint="@string/auth_example_email"
+            android:layout_marginBottom="16dp"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/app_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/auth_example_password"
+            android:layout_marginBottom="16dp" />
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/button_fill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/next_btn" />
+    </LinearLayout>
 
-    </FrameLayout>
+
 </layout>
