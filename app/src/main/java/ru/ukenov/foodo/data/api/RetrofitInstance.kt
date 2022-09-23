@@ -15,7 +15,7 @@ class RetrofitInstance {
                 .addInterceptor(logging)
                 .build()
             Retrofit.Builder()
-                .baseUrl("http://localhost:8000")
+                .baseUrl("https://api.memegen.link")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build()

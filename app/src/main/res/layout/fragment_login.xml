@@ -7,6 +7,12 @@
         android:layout_marginHorizontal="16dp"
         android:orientation="vertical"
         tools:context=".presentation.auth.LoginFragment">
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/custom_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="ru.ukenov.foodo.presentation.app.CustomAppBarFragment"
+            />
         <TextView
             style="@style/auth_title"
             android:layout_width="match_parent"
@@ -32,7 +38,7 @@
             style="@style/button_fill"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/next_btn" />
+            android:text="@string/log_in_btn" />
     </LinearLayout>
 
 

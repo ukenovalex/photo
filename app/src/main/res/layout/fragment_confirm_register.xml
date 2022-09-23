@@ -6,7 +6,7 @@
         android:layout_height="match_parent"
         android:layout_marginHorizontal="16dp"
         android:orientation="vertical"
-        tools:context=".presentation.auth.RegisterFragment">
+        tools:context=".presentation.auth.ConfirmRegisterFragment">
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/custom_app_bar"
             android:layout_width="match_parent"
@@ -24,21 +24,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:inputType="textEmailAddress"
-            android:hint="@string/auth_example_email"
+            android:inputType="textPersonName"
+            android:hint="@string/register_name_example"
             android:layout_marginBottom="16dp"/>
-        <androidx.appcompat.widget.AppCompatEditText
-            style="@style/app_input"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:hint="@string/auth_example_password"
-            android:layout_marginBottom="16dp" />
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_next"
             style="@style/button_fill"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/next_btn" />
+            android:text="@string/sign_up_btn" />
+        <TextView
+            style="@style/app_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/privacy_policy_link"
+            android:layout_marginTop="32dp" />
     </LinearLayout>
 </layout>

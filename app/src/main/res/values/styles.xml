@@ -45,4 +45,10 @@
         <item name="android:textCursorDrawable">@drawable/app_cursor</item>
         <item name="android:textColorHint">@color/black</item>
     </style>
+
+    <style name="app_text">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
 </resources>

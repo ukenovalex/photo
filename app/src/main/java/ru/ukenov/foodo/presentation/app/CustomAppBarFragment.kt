@@ -1,4 +1,4 @@
-package ru.ukenov.foodo.presentation.auth
+package ru.ukenov.foodo.presentation.app
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,26 +7,26 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import ru.ukenov.foodo.R
-import ru.ukenov.foodo.databinding.FragmentRegisterBinding
+import ru.ukenov.foodo.databinding.FragmentCustomAppBarBinding
 
 
-class RegisterFragment : Fragment() {
-    private lateinit var binding: FragmentRegisterBinding
+class CustomAppBarFragment : Fragment() {
+
+    private lateinit var binding: FragmentCustomAppBarBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentRegisterBinding.inflate(layoutInflater, container, false)
+        binding = FragmentCustomAppBarBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.btnNext.setOnClickListener {
-            view.findNavController().navigate(R.id.action_registerFragment_to_confirmRegisterFragment)
+        binding.btnPopBackStack.setOnClickListener {
+            view.findNavController().popBackStack()
         }
     }
-
 }
