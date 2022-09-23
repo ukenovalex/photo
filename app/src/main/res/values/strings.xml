@@ -15,4 +15,5 @@
     <string name="sign_up_btn">sign up</string>
     <string name="privacy_policy_link">By signing up, you agree to Photo’s <u>Terms of Service</u> and <u>Privacy Policy</u>.</string>
     <string name="discover_title">Discover</string>
+    <string name="new_post_slider">New Post</string>
 </resources>

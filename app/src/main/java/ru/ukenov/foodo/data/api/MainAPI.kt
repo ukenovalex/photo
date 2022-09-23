@@ -5,5 +5,5 @@ import ru.ukenov.foodo.data.models.ImagesResponse
 
 interface MainAPI {
     @GET("/images")
-    suspend fun getImages(): Array<ImagesResponse>
+    suspend fun getImages(): List<ImagesResponse>
 }
