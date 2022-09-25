@@ -1,18 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
         tools:context=".presentation.main.MainPageSlideFragment">
 
         <ImageView
             android:id="@+id/post_image"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:autoLink="web"
+            android:layout_height="343dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
             android:contentDescription="@string/new_post_slider"/>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginEnd="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/avatar_example"
+                    app:shapeAppearanceOverlay="@style/roundedImageViewRounded"/>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ridhwan_nordin"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="13sp"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\@ridzjcob"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="11sp"/>
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 </layout>
