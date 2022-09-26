@@ -38,14 +38,24 @@ class MainPageFragment : Fragment() {
             "https://api.memegen.link/images/aag/_/aliens.png",
             "https://api.memegen.link/images/ackbar/_/it's_a_trap!.png",
             "https://api.memegen.link/images/afraid/i_don't_know_what_this_meme_is_for/and_at_this_point_i'm_too_afraid_to_ask.png",
-            "https://api.memegen.link/images/agnes/_/i_have_read_and_agree_to_the_terms_and_conditions.png"
+            "https://api.memegen.link/images/agnes/_/i_have_read_and_agree_to_the_terms_and_conditions.png",
+            "https://api.memegen.link/images/aag/_/aliens.png",
+            "https://api.memegen.link/images/ackbar/_/it's_a_trap!.png",
+            "https://api.memegen.link/images/afraid/i_don't_know_what_this_meme_is_for/and_at_this_point_i'm_too_afraid_to_ask.png",
+            "https://api.memegen.link/images/agnes/_/i_have_read_and_agree_to_the_terms_and_conditions.png",
+            "https://api.memegen.link/images/aag/_/aliens.png",
+            "https://api.memegen.link/images/ackbar/_/it's_a_trap!.png",
+            "https://api.memegen.link/images/afraid/i_don't_know_what_this_meme_is_for/and_at_this_point_i'm_too_afraid_to_ask.png",
+            "https://api.memegen.link/images/agnes/_/i_have_read_and_agree_to_the_terms_and_conditions.png",
+            "https://api.memegen.link/images/aag/_/aliens.png",
+            "https://api.memegen.link/images/ackbar/_/it's_a_trap!.png",
+            "https://api.memegen.link/images/afraid/i_don't_know_what_this_meme_is_for/and_at_this_point_i'm_too_afraid_to_ask.png",
+            "https://api.memegen.link/images/agnes/_/i_have_read_and_agree_to_the_terms_and_conditions.png",
         )
         val items = ArrayList<MainItem>().apply {
             add(FirstSectionItem(sliderAdapter))
             add(SecondSectionItem())
-            newsList.forEach {
-                add(ThirdSectionItem(it))
-            }
+            add(ThirdSectionItem(newsList))
         }
         binding.rvMainPage.adapter = MainAdapter(items)
     }

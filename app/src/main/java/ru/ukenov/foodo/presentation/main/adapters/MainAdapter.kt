@@ -4,6 +4,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import com.bumptech.glide.Glide
@@ -15,6 +17,8 @@ import ru.ukenov.foodo.presentation.main.adapters.items.ThirdSectionItem
 
 class MainAdapter(private val items: List<MainItem>) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+
+    private val viewPool = RecyclerView.RecycledViewPool()
 
     override fun getItemViewType(position: Int): Int {
         return when (items[position]) {
@@ -38,12 +42,9 @@ class MainAdapter(private val items: List<MainItem>) :
                     .inflate(R.layout.main_page_second_section, parent, false)
             )
             THIRD_SECTION_TYPE -> {
-                val container =  LayoutInflater
-                    .from(parent.context)
-                    .inflate(R.layout.main_page_third_section_container, parent, false)
                 ThirdSectionViewHolder(
                     itemView = LayoutInflater
-                        .from(container.context)
+                        .from(parent.context)
                         .inflate(R.layout.main_page_third_section, parent, false)
                 )
             }
@@ -56,8 +57,11 @@ class MainAdapter(private val items: List<MainItem>) :
             is FirstSectionViewHolder -> holder.slider.adapter =
                 (items[position] as FirstSectionItem).sliderAdapter
             is ThirdSectionViewHolder -> {
-                val image = (items[position] as ThirdSectionItem).image
-                Glide.with(holder.itemView).load(image).into(holder.imageView)
+                val images = (items[position] as ThirdSectionItem).images
+                val adapter = BrowserAllAdapter(images)
+                holder.rvBrowserAll.adapter = adapter
+                holder.rvBrowserAll.setRecycledViewPool(viewPool)
+
             }
         }
     }
@@ -72,7 +76,7 @@ class MainAdapter(private val items: List<MainItem>) :
 
     class SecondSectionViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
     class ThirdSectionViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val imageView = itemView.findViewById<ImageView>(R.id.image)
+        val rvBrowserAll: RecyclerView = itemView.findViewById(R.id.rv_browser_all)
     }
 
     companion object {

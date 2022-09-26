@@ -1,3 +1,5 @@
 package ru.ukenov.foodo.presentation.main.adapters.items
 
-data class ThirdSectionItem(val image: String) : MainItem
+data class ThirdSectionItem(
+    val images: List<String>
+) : MainItem
