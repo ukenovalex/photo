@@ -6,12 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import ru.ukenov.foodo.databinding.FragmentMainPageBinding
-import ru.ukenov.foodo.presentation.main.adapters.items.FirstSectionItem
+import ru.ukenov.foodo.presentation.main.adapters.items.NewsSectionItem
 import ru.ukenov.foodo.presentation.main.adapters.MainAdapter
 import ru.ukenov.foodo.presentation.main.adapters.items.MainItem
 import ru.ukenov.foodo.presentation.main.adapters.SliderAdapter
-import ru.ukenov.foodo.presentation.main.adapters.items.SecondSectionItem
-import ru.ukenov.foodo.presentation.main.adapters.items.ThirdSectionItem
+import ru.ukenov.foodo.presentation.main.adapters.items.BrowseSectionItem
 import java.util.ArrayList
 
 
@@ -53,9 +52,8 @@ class MainPageFragment : Fragment() {
             "https://api.memegen.link/images/agnes/_/i_have_read_and_agree_to_the_terms_and_conditions.png",
         )
         val items = ArrayList<MainItem>().apply {
-            add(FirstSectionItem(sliderAdapter))
-            add(SecondSectionItem())
-            add(ThirdSectionItem(newsList))
+            add(NewsSectionItem(sliderAdapter))
+            add(BrowseSectionItem(newsList))
         }
         binding.rvMainPage.adapter = MainAdapter(items)
     }
