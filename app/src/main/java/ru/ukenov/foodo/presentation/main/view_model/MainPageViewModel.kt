@@ -1,4 +1,7 @@
 package ru.ukenov.foodo.presentation.main.view_model
 
-class MainPageViewModel {
+import androidx.lifecycle.ViewModel
+
+class MainPageViewModel : ViewModel() {
+
 }
